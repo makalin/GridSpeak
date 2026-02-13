@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "crates/gridspeak-core",
+    "crates/gridspeak-node",
+]
+resolver = "2"

@@ -1,0 +1,20 @@
+[package]
+name = "gridspeak-node"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = "0.7"
+base64 = "0.22"
+anyhow = "1.0"
+clap = { version = "4.5", features = ["derive"] }
+futures = "0.3"
+gridspeak-core = { path = "../gridspeak-core" }
+libp2p = { version = "0.54", default-features = false, features = ["tcp", "noise", "yamux", "gossipsub", "mdns", "identify", "tokio", "macros"] }
+parking_lot = "0.12"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+tokio = { version = "1.37", features = ["full"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }
